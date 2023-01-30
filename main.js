@@ -21,17 +21,38 @@ menu_item.forEach((item) => {
 });
 
 
-//custom coursers section 
-// let curses = document.querySelectorAll("#courses .courses-cards .card");
-// let para = document.querySelectorAll("#courses .courses-cards .card p");
+const data = [
+  {
+    title: "HTML",
+    info: "html is the basic of the web world so you have to learn it ",
+    img: "https://cdn-icons-png.flaticon.com/512/732/732212.png",
+  },
+  {
+    title: "CSS",
+    info: "soon",
+    img: "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png",
+  },
+  {
+    title: "JS",
+    info: "soon",
+    img: "https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_960_720.png",
+  },
+];
 
-// curses.forEach((e)=>{
-//     e.onmouseover=()=>{
-//         para.forEach((e)=>{
-//             e.style.display="unset"
-//         })
-//     }
-//     e.onmouseout = () => {
-//         console.log(2);
-//     };
-// })
+
+//loop on my data
+let courses_contsiner = document.querySelector(".courses-cards");
+
+for (let i = 0; i < data.length; i++) {
+    let card = `
+        <div class="card">
+                <img src=${data[i].img} alt="">
+                <div class="card-body">
+                    <h1>${data[i].title}</h1>
+                    <p>${data[i].info}</p>
+                    <button>start learn</button>
+                </div>
+            </div>
+    `;
+    courses_contsiner.innerHTML+=card;
+}
