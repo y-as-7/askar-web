@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -35,7 +36,7 @@ a {
 
 
 
-#main {
+#header {
     position: fixed;
     z-index: 100;
     left: 0;
@@ -45,13 +46,13 @@ a {
     background-color:#151a25 ;
 }
 
-#main .header {
+#header .header {
     min-height: 8vh;
     background-color: rgba(31, 30, 30, 0.24);
     transition: 0.3s ease background-color;
 }
 
-#main .nav-bar {
+#header .nav-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,7 +62,7 @@ a {
     padding: 0 10px;
 }
 
-#main .nav-list ul {
+#header .nav-list ul {
     list-style: none;
     position: absolute;
     background-color: #202832;
@@ -78,11 +79,11 @@ a {
     transition: 0.5s ease left;
 }
 
-#main .nav-list ul.active {
+#header .nav-list ul.active {
     left: 0%;
 }
 
-#main .nav-list ul a {
+#header .nav-list ul a {
     font-size: 2.5rem;
     font-weight: 500;
     letter-spacing: 0.2rem;
@@ -93,7 +94,7 @@ a {
     display: block;
 }
 
-#main .nav-list ul a::after {
+#header .nav-list ul a::after {
     content: attr(data-after);
     position: absolute;
     top: 50%;
@@ -106,16 +107,16 @@ a {
     transition: 0.3s ease letter-spacing;
 }
 
-#main .nav-list ul li:hover a::after {
+#header .nav-list ul li:hover a::after {
     transform: translate(-50%, -50%) scale(1);
     letter-spacing: initial;
 }
 
-#main .nav-list ul li:hover a {
+#header .nav-list ul li:hover a {
     color: crimson;
 }
 
-#main .hamburger {
+#header .hamburger {
     height: 60px;
     width: 60px;
     display: inline-block;
@@ -131,7 +132,7 @@ a {
     margin-right: 20px;
 }
 
-#main .hamburger:after {
+#header .hamburger:after {
     position: absolute;
     content: '';
     height: 100%;
@@ -141,7 +142,7 @@ a {
     animation: hamburger_puls 1s ease infinite;
 }
 
-#main .hamburger .bar {
+#header .hamburger .bar {
     height: 2px;
     width: 30px;
     position: relative;
@@ -149,8 +150,8 @@ a {
     z-index: -1;
 }
 
-#main .hamburger .bar::after,
-#main .hamburger .bar::before {
+#header .hamburger .bar::after,
+#header .hamburger .bar::before {
     content: '';
     position: absolute;
     height: 100%;
@@ -161,24 +162,74 @@ a {
     transition-property: top, bottom;
 }
 
-#main .hamburger .bar::after {
+#header .hamburger .bar::after {
     top: 8px;
 }
 
-#main .hamburger .bar::before {
+#header .hamburger .bar::before {
     bottom: 8px;
 }
 
-#main .hamburger.active .bar::before {
+#header .hamburger.active .bar::before {
     bottom: 0;
 }
 
-#main .hamburger.active .bar::after {
+#header .hamburger.active .bar::after {
     top: 0;
 }
-
-
 /* End Header section */
+
+/* Start home */
+#main{
+    height: 100vh;
+    align-items: center;
+    width: 100%;
+    background-color: #202c3a;
+    display: flex;
+    overflow: hidden;
+}
+#main .titles{
+    width: 70%;
+    margin: 0 auto;
+}
+#main .titles h1{
+    text-transform: capitalize;
+}
+#main .titles h1:first-child{
+    color: #fff;
+    font-size: 7rem;
+}
+#main .titles h1:nth-child(2){
+    color:crimson;
+    font-size:9rem;
+}
+#main .titles h1:nth-child(3){
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 4rem;
+}
+#main h1 span {
+    color: crimson;
+}
+#main .titles a{
+    font-size: 4rem;
+    background-color: transparent;
+    padding: 10px 20px;
+    color: #fff;
+    border: 1px solid crimson;
+    cursor: pointer;
+    transition: 1s ease;
+}
+#main .titles a:hover{
+    background-color: crimson;
+    border:1px solid #fff;
+
+}
+
+/* End home */
+
+
 
 
 
@@ -209,27 +260,68 @@ a {
 
 @media only screen and (min-width: 1200px) {
     /* header */
-    #main .hamburger {
+    #header .hamburger {
         display: none;
     }
-    #main .nav-list ul {
+    #header .nav-list ul {
         position: initial;
         display: block;
         height: auto;
         width: fit-content;
         background-color: transparent;
     }
-    #main .nav-list ul li {
+    #header .nav-list ul li {
         display: inline-block;
     }
-    #main .nav-list ul li a {
+    #header .nav-list ul li a {
         font-size: 1.8rem;
     }
-    #main .nav-list ul a:after {
+    #header .nav-list ul a:after {
         display: none;
     }
     /* End header */
 }
 
-
 /* End  Media Query For Desktop */
+
+
+/*start media query at mobile  */
+@media(max-width:645px){
+    /* start main */
+    #main{
+    height: 100vh;
+    align-items: center;
+    width: 100%;
+    background-color: #202c3a;
+    display: flex;
+    overflow: hidden;
+}
+    #main .titles{
+        width: 70%;
+        margin: 0 auto;
+    }
+    #main .titles h1{
+        text-transform: capitalize;
+    }
+    #main .titles h1:first-child{
+        font-size: 5rem;
+    }
+    #main .titles h1:nth-child(2){
+        font-size:6rem;
+    }
+    #main .titles h1:nth-child(3){
+        font-size: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+    #main .titles a{
+        font-size: 3rem;
+        background-color: transparent;
+        padding: 10px 20px;
+        color: #fff;
+        border: 1px solid crimson;
+        cursor: pointer;
+    }
+    /* end main */
+}
+/*end media query at mobile  */
