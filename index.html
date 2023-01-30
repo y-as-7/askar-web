@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Document</title>
-    <script defer src="main.js"></script>
-</head>
-<body>
-    <!-- start header -->
-    <header>
-        <div class="logo">Askar <span> &lt;/</span>Web<span>&gt;</span> </div>
-        <div class="links">
-            <ul>
-                <li>
-                    <button>courses</button>
-                    <div class="list">
-                        <a>html</a>
-                        <a>css</a>
-                        <a>js</a>
-                    </div>
-                </li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">contact</a></li>
-            </ul>
-        </div>
-    </header>
-    <!-- end header -->
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="main">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="logo">
+          <a href="#main">
+            <h1><span>A</span>skar &lt;<span>/w</span>eb&gt;</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#main" data-after="Home">Home</a></li>
+            <li><a href="#services" data-after="Service">courses</a></li>
+            <li><a href="#projects" data-after="Projects">projects</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <script src="./main.js"></script>
 </body>
+
 </html>
