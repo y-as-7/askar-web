@@ -19,3 +19,19 @@ menu_item.forEach((item) => {
     mobile_menu.classList.toggle("active");
   });
 });
+
+
+//custom coursers section 
+// let curses = document.querySelectorAll("#courses .courses-cards .card");
+// let para = document.querySelectorAll("#courses .courses-cards .card p");
+
+// curses.forEach((e)=>{
+//     e.onmouseover=()=>{
+//         para.forEach((e)=>{
+//             e.style.display="unset"
+//         })
+//     }
+//     e.onmouseout = () => {
+//         console.log(2);
+//     };
+// })
