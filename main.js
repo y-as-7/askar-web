@@ -60,7 +60,7 @@ for (let i = 0; i < data.length; i++) {
 
 // projects filter 
 let btns = document.querySelectorAll("#projects .buttons button");
-let imgs = document.querySelectorAll("#projects .cards img");
+let imgs = document.querySelectorAll("#projects .cards .card");
 
 for(let i=1 ; i<btns.length; i++){
     btns[i].addEventListener("click", FilterImg);
