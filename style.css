@@ -187,7 +187,6 @@ a {
     background-color: #202c3a;
     display: flex;
     overflow: hidden;
-    margin-bottom: 12rem;
 }
 #main .titles{
     width: 70%;
@@ -233,6 +232,7 @@ a {
 /* start courses */
 #courses{
     width: 80%;
+    padding-top:150px !important ;
     margin: 0 auto;
 }
 #courses .title {
@@ -326,7 +326,147 @@ a {
 /* end courses */
 
 
+/* start project */
+#projects{
+    padding-top: 150px !important;
+    min-height: 120vh;
+}
+#projects .titles{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+#projects .titles h1{
+    font-size: 7rem;
+    text-transform: uppercase;
+}
+#projects .titles h1 span{
+    color: crimson;
+}
+#projects .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#projects .buttons button{
+    margin: 1em;
+    text-transform: uppercase;
+    padding: 0.7em 1.5em;
+    font-size:2rem;
+    font-weight: 600;
+    border: none;
+    background-color: #202c3a;
+    color: crimson;
+    border: 2px slod #111;
+    border-radius: 0.2em;
+    cursor: pointer;
+    transition: .3s;
+}
+#projects .buttons button:hover,#projects .buttons .btn-clicked{
+    background-color: crimson;
+    color: #151a25;
+}
+#projects .cards{
+    max-width: 1360px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+#projects .cards .card{
+    border-radius: 29px;
+    overflow: hidden;
+    position: relative;
+}
+#projects .cards .card .card-body{
+    width: 100%;
+    height: 100%;
+    border-radius:20px;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background-color: #373b405b;
+    backdrop-filter: blur(5px);
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+}
+#projects .card .card-body h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 900;
+}
+#projects .card .card-body p{
+    font-size: 1.4rem;
+    line-height: 20px;
+    margin: 40px 0;
+    font-weight: 700;
+}
+#projects .courses-cards .card .card-body button{
+    color: #fff;
+    background-color: rgba(220, 20, 60, 0.557);
+    border: none;
+    font-size: 40px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+}
+#projects .cards .card:hover .card-body{
+    right: 0;
+}
+#projects .cards img{
+    width: 100%;
+    object-fit: cover;
+    border-radius:20px;
+    margin: 1em;
+    border-radius: .2em;
+    transition: .6s;
+}
+/* classes for js */
+#projects .card .img-expand{
+    width: 400px;
+    margin: 1em;
+}
+#projects .cards .img-shrink{
+    width: 0em;
+    border: none;
+    margin: -1em;
+}
 
+@media screen and (max-width:1439px) {
+    #projects .cards{
+        max-width:896px;
+    }
+}
+@media screen and (max-width:986px) {
+    #projects .cards {
+        align-items: center;
+        flex-direction: column;
+    }
+    #projects .cards img{
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+}
+@media screen and (max-width:600px) {
+    #projects .buttons button{
+        width: 100%;
+        display: block;
+    }
+    #projects .cards .img-expand,.cards img{
+        width: 100%;
+    }
+}
+
+
+/* end project */
 
 
 

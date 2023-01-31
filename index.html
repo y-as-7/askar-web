@@ -4,13 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>My Website</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>askar web</title>
   </head>
 
   <body>
     <!-- Header -->
-    <section id="header">
+    <div id="header">
       <div class="header container">
         <div class="nav-bar">
           <div class="logo">
@@ -25,14 +32,14 @@
             <ul>
               <li><a href="#main" data-after="main">Home</a></li>
               <li><a href="#courses" data-after="courses">courses</a></li>
-              <li><a href="#" data-after="">projects</a></li>
+              <li><a href="#projects" data-after="projects">projects</a></li>
               <li><a href="#" data-after="">About</a></li>
               <li><a href="#" data-after="">Contact</a></li>
             </ul>
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <!-- End Header -->
 
     <!-- start Home -->
@@ -48,15 +55,56 @@
 
     <!-- start  COURSES section-->
     <div id="courses">
+      <div class="con">
         <div class="title">
-            <h1>cou<span>r</span>ses</h1>
-            <p>Learn as if you will live forever, live like you will die tomorrow.</p>
+          <h1>cou<span>r</span>ses</h1>
+          <p>
+            Learn as if you will live forever, live like you will die tomorrow.
+          </p>
         </div>
-        <div class="courses-cards">
-            
-        </div>
+        <div class="courses-cards"></div>
+      </div>
     </div>
     <!-- end  COURSES section-->
+
+    <!-- start projectes -->
+    <section id="projects">
+      <div class="con">
+        <div class="titles">
+          <h1>pro<span>j</span>ects</h1>
+        </div>
+        <div class="buttons">
+          <button type="button" data-btn="1">all</button>
+          <button type="button" data-btn="2">html - css</button>
+          <button type="button" data-btn="3">html - css - js</button>
+          <button type="button" data-btn="4">react</button>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="./img/sign1.jpg" alt="img" data-img="2" />
+
+            </div>
+            <div class="card">
+                <img src="./img/train-gym.jpg" alt="img" data-img="3" />
+                <div class="card-body">
+                    <h1>trin gym</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, dolore.</p>
+                    <button></button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/sign2.jpg" alt="img" data-img="2" />
+            </div>
+            <div class="card">
+                <img src="./img/pass-gen.jpg" alt="img" data-img="3" />
+            </div>
+            <div class="card">
+                <img src="./img/timer.jpg" alt="img" data-img="3" />
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- end projects -->
 
     <script src="./main.js"></script>
   </body>
