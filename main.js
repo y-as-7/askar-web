@@ -59,14 +59,99 @@ for (let i = 0; i < data.length; i++) {
 
 
 
-let projectsData=[
+let projectsData = [
   {
-    title:""
-  }
-]
+    dataSet: 2,
+    title: "Sign in",
+    info: "lorem wef newfnewfn oewfn oewn",
+    img: "./img/sign1.jpg",
+    siteLink: "https://y-as-7.github.io/sign-up-1/",
+    gitHub: "https://github.com/y-as-7/sign-up-1",
+    icons: {
+      html: "fa-brands fa-html5",
+      css: "fa-brands fa-css3-alt",
+      js: "none",
+    },
+  },
+  {
+    dataSet: 3,
+    title: "Train Gym",
+    info: "lorem wef newfnewfn oewfn oewn",
+    img: "./img/train-gym.jpg",
+    siteLink: "https://y-as-7.github.io/train-gym/",
+    gitHub: "https://github.com/y-as-7/train-gym",
+    icons: {
+      html: "fa-brands fa-html5",
+      css: "fa-brands fa-css3-alt",
+      js: "fa-brands fa-js",
+    },
+  },
+  {
+    dataSet: 2,
+    title: "Sign in to G-Lab",
+    info: "lorem wef newfnewfn oewfn oewn",
+    img: "./img/sign2.jpg",
+    siteLink: "https://y-as-7.github.io/sign-up-2/",
+    gitHub: "https://github.com/y-as-7/sign-up-2",
+    icons: {
+      html: "fa-brands fa-html5",
+      css: "fa-brands fa-css3-alt",
+      js: "none",
+    },
+  },
+  {
+    dataSet: 3,
+    title: "password Generator",
+    info: "lorem wef newfnewfn oewfn oewn",
+    img: "./img/pass-gen.jpg",
+    siteLink: "https://y-as-7.github.io/password-generator/",
+    gitHub: "https://github.com/y-as-7/password-generator",
+    icons: {
+      html: "fa-brands fa-html5",
+      css: "fa-brands fa-css3-alt",
+      js: "fa-brands fa-js",
+    },
+  },
+  {
+    dataSet: 3,
+    title: "birth Day counter",
+    info: "lorem wef newfnewfn oewfn oewn",
+    img: "./img/timer.jpg",
+    siteLink: "https://y-as-7.github.io/birthday-counter-down/",
+    gitHub: "https://github.com/y-as-7/birthday-counter-down",
+    icons: {
+      html: "fa-brands fa-html5",
+      css: "fa-brands fa-css3-alt",
+      js: "fa-brands fa-js",
+    },
+  },
+];
+
+
 //loop on data on the project
 let projectsPlace=document.querySelector("#projects .cards");
-
+for(let i=0 ; i<projectsData.length;i++){
+  let projectCard = `
+  <div class="card" data-img="${projectsData[i].dataSet}">
+                <img src=${projectsData[i].img}  />
+                <div class="card-body">
+                  <div class="icons">
+                    <i class="${projectsData[i].icons.html}"></i>
+                    <i class="${projectsData[i].icons.css}"></i>
+                    <i class="${projectsData[i].icons.js}"></i>
+                  </div>
+                  <h1>${projectsData[i].title}</h1>
+                  <p>${projectsData[i].info}</p>
+                  <div class="links">
+                    <a target="_blank" href=${projectsData[i].siteLink}> <i class="fa-solid fa-link"></i> visit the site</a>
+                    <a target="_blank" href=${projectsData[i].gitHub}><i class="fa-brands fa-github"></i> git hub</a>
+                  </div>
+                </div>
+            </div>
+  
+  `;
+  projectsPlace.innerHTML+=projectCard;
+}
 
 
 

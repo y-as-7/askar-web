@@ -427,6 +427,7 @@ html{
     background-color: #fff;
     margin: 10px 0;
     padding:5px  20px 5px 4px;
+    border-radius: 2px;
 }
 #projects .card .card-body .icons i:nth-child(1){
     color: orangered;
@@ -439,8 +440,8 @@ html{
 }
 #projects .card .card-body h1{
     text-transform: uppercase; 
-    font-size: 50px;
-    font-weight: 900;
+    font-size: 30px;
+    font-weight: 600;
 }
 #projects .card .card-body p{
     font-size: 1.4rem;
@@ -656,3 +657,6 @@ html{
     /* end main */
 }
 /*end media query at mobile  */
+.none{
+    display: none;
+}
