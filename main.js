@@ -58,6 +58,21 @@ for (let i = 0; i < data.length; i++) {
 }
 
 
+
+let projectsData=[
+  {
+    title:""
+  }
+]
+//loop on data on the project
+let projectsPlace=document.querySelector("#projects .cards");
+
+
+
+
+
+
+
 // projects filter 
 let btns = document.querySelectorAll("#projects .buttons button");
 let imgs = document.querySelectorAll("#projects .cards .card");
@@ -98,4 +113,7 @@ btns[0].addEventListener("click",(e)=>{
         img.classList.add("img-expand");
     });
 });
+
+
+
 

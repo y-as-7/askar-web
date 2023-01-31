@@ -34,14 +34,18 @@ a {
     justify-content: center;
 }
 
-
-
+body{
+    overflow-x: hidden;
+}
+html{
+    width: 100%;
+}
 #header {
     position: fixed;
     z-index: 100;
     left: 0;
     top: 0;
-    width: 100vw;
+    width: 100%;
     height: auto;
     background-color:#151a25 ;
 }
@@ -66,7 +70,7 @@ a {
     list-style: none;
     position: absolute;
     background-color: #202832;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     left: 100%;
     top: 0;
@@ -186,7 +190,6 @@ a {
     width: 100%;
     background-color: #202c3a;
     display: flex;
-    overflow: hidden;
 }
 #main .titles{
     width: 70%;
@@ -328,6 +331,8 @@ a {
 
 /* start project */
 #projects{
+    width: 100%;
+    overflow-x: hidden;
     padding-top: 150px !important;
     min-height: 120vh;
 }
@@ -367,6 +372,7 @@ a {
     background-color: crimson;
     color: #151a25;
 }
+
 #projects .cards{
     max-width: 1360px;
     margin: 0 auto;
@@ -376,9 +382,10 @@ a {
     flex-wrap: wrap;
     gap: 2em;
 }
+
 #projects .cards .card{
     width: 400px;
-    border-radius: 29px;
+    border-radius: 20px;
     overflow: hidden;
     position: relative;
     transition: .5s;
@@ -386,6 +393,7 @@ a {
 }
 #projects .cards img{
     width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius:20px;
     border-radius: .2em;
@@ -394,7 +402,6 @@ a {
 #projects .cards .card .card-body{
     width: 100%;
     height: 100%;
-    border-radius:20px;
     top: 0;
     right: -100%;
     position: absolute;
@@ -407,8 +414,31 @@ a {
     justify-content: center;
     transition: 1s;
 }
+#projects .card .card-body .icons{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+    color: crimson;
+}
+#projects .card .card-body .icons i{
+    background-color: #fff;
+    margin: 10px 0;
+    padding:5px  20px 5px 4px;
+}
+#projects .card .card-body .icons i:nth-child(1){
+    color: orangered;
+}
+#projects .card .card-body .icons i:nth-child(2){
+    color: blue;
+}
+#projects .card .card-body .icons i:nth-child(3){
+    color: rgb(229, 229, 77);
+}
 #projects .card .card-body h1{
-    text-transform: uppercase;
+    text-transform: uppercase; 
     font-size: 50px;
     font-weight: 900;
 }
@@ -418,6 +448,26 @@ a {
     margin: 40px 0;
     font-weight: 700;
 }
+#projects .card .card-body .links {
+    position: absolute;
+    bottom: 15%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+#projects .card .card-body .links a{
+    font-size: 2rem;
+    color: #fff;
+    transition: .4s ease;
+    border: 2px solid #fff;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+#projects .card .card-body .links a:hover{
+    color: crimson;
+    border: 2px solid crimson;
+}
 #projects .courses-cards .card .card-body button{
     color: #fff;
     background-color: rgba(220, 20, 60, 0.557);
@@ -425,11 +475,15 @@ a {
     font-size: 40px;
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 20px;
     outline: none;
 }
 #projects .cards .card:hover .card-body{
     right: 0;
+}
+
+#projects .cards .card:hover{
+    border:5px solid crimson;
 }
 
 /* classes for js */
@@ -467,8 +521,47 @@ a {
     #projects .cards .img-expand,.cards img{
         width: 100%;
     }
+    #projects .cards{
+    width: 80%;
+}
 }
 
+@media(max-width:496px){
+
+    #projects .card .card-body .links a{
+    font-size: 1rem;
+    color: #fff;
+    transition: .4s ease;
+    border: 2px solid #fff;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+#projects .cards .card{
+    width: 300px;
+}
+#projects .card .img-expand{
+    width: 300px;
+    margin: 1em;
+    display: block;
+}
+#projects .cards .img-shrink{
+    width: 0em;
+    border: none;
+    margin: -1em;
+}
+}
+
+@media(max-width:574px){
+    #projects .cards{
+    max-width: 1360px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+}
+
+}
 
 /* end project */
 
@@ -529,9 +622,10 @@ a {
     height: 100vh;
     align-items: center;
     width: 100%;
+    
     background-color: #202c3a;
     display: flex;
-    overflow: hidden;
+    overflow-x: hidden;
 }
     #main .titles{
         width: 70%;
