@@ -204,10 +204,10 @@ btns[0].addEventListener("click",(e)=>{
 //scrollreveal
 
 ScrollReveal({
-  reset: true,
+  reset: false,
   distance: "60px",
   duration: 2000,
-  delay: 300,
+  delay: 100,
 });
 
 ScrollReveal().reveal(" #courses h1 ", {
