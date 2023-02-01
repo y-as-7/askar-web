@@ -342,7 +342,7 @@ html{
     margin-bottom: 3rem;
 }
 #projects .titles h1{
-    font-size: 7rem;
+    font-size: 6rem;
     text-transform: uppercase;
 }
 #projects .titles h1 span{
@@ -835,6 +835,7 @@ animation: sqlserver 1s linear;
 /* Footer */
 
 #footer {
+    width: 100%;
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
 

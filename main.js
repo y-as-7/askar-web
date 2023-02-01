@@ -201,4 +201,76 @@ btns[0].addEventListener("click",(e)=>{
 
 
 
+//scrollreveal
 
+ScrollReveal({
+  reset: true,
+  distance: "60px",
+  duration: 2000,
+  delay: 300,
+});
+
+ScrollReveal().reveal(" #courses h1 ", {
+  delay: 200,
+  origin: "bottom",
+});
+ScrollReveal().reveal("#courses  p ", {
+  delay: 200,
+  origin: "top",
+});
+
+ScrollReveal().reveal("#courses  p ", {
+  delay: 200,
+  origin: "top",
+});
+ScrollReveal().reveal("   .card ", {
+  delay: 200,
+  origin: "left",
+  interval: 200,
+});
+ScrollReveal().reveal("#projects  h1 ", {
+  delay: 200,
+  origin: "top",
+});
+ScrollReveal().reveal("#projects  button ", {
+  delay: 200,
+  origin: "left",
+});
+
+
+ScrollReveal().reveal("#aboutMe .con .about h1 ", {
+  delay: 200,
+  origin: "left",
+
+});
+ScrollReveal().reveal("#aboutMe .con .about h2", {
+  delay: 200,
+  origin: "left",
+});
+
+ScrollReveal().reveal("#aboutMe .con .about p", {
+  delay: 200,
+  origin: "bottom",
+});
+
+ScrollReveal().reveal("#aboutMe   h1 ", {
+  delay: 200,
+  origin: "bottom",
+  interval: 200,
+});
+
+ScrollReveal().reveal(" .skill-con span  ", {
+  delay: 200,
+  origin: "left",
+  interval: 200,
+});
+
+ScrollReveal().reveal("#contact   h1 ", {
+  delay: 200,
+  origin: "bottom",
+});
+ScrollReveal().reveal("#contact   .contact-item", {
+  interval: 200,
+  delay: 200,
+  origin: "left",
+});
