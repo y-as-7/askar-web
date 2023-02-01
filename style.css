@@ -333,7 +333,7 @@ html{
 #projects{
     width: 100%;
     overflow-x: hidden;
-    padding-top: 150px !important;
+    padding: 150px 0 !important;
     min-height: 120vh;
 }
 #projects .titles{
@@ -565,6 +565,279 @@ html{
 }
 
 /* end project */
+
+
+/* start about me */
+#aboutMe{
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#aboutMe .con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#aboutMe .con .about h1{
+    text-align: center;
+    margin: 2rem 0;
+    font-size:5rem ;
+    text-transform: uppercase;
+}
+#aboutMe .con .about h1 span{
+    color: crimson;
+}
+#aboutMe .con .about h2{
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+#aboutMe .con .about p{
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+#aboutMe .con .skills{
+    margin: 4rem 0 2rem 0;
+}
+#aboutMe .con .skills h1{
+    font-size:4rem ;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+#aboutMe .con .skills h1 span{
+    color: crimson;
+} 
+
+#aboutMe  .skills .skill-con{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#aboutMe  .skills .frontend{
+    width: 40% ;
+} 
+#aboutMe  .skill-con .backend{
+    width: 40% ;
+} 
+#aboutMe .con .skills ul li h1{
+    text-align: left;
+    font-size: 2rem;
+    margin: 0 0 4px 0;
+}
+#aboutMe .con .skills ul{
+    list-style: none;
+}
+
+#aboutMe .con .skills ul li span{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: #151a25;
+    display: block;
+    position: relative;
+}
+#aboutMe .con .skills .html-bar::after{
+content: "";
+display: block;
+width: 85%;
+height: 30px;
+background-color: crimson;
+animation: html 1s linear;
+}
+#aboutMe .con .skills .html-bar::before{
+    content: "85%";
+    font-size: 1.5rem;
+    font-weight: 900;
+    position: absolute;
+    right: -40px;
+    top: 20%;
+    color: crimson;
+}
+#aboutMe .con .skills .css-bar::after{
+content: "";
+display: block;
+width: 75%;
+height: 30px;
+background-color: crimson;
+animation: css 1s linear;
+}
+#aboutMe .con .skills .css-bar::before{
+    content: "75%";
+    font-size: 1.5rem;
+    font-weight: 900;
+    position: absolute;
+    right: -40px;
+    top: 20%;
+    color: crimson;
+}
+#aboutMe .con .skills .js-bar::after{
+content: "";
+display: block;
+width: 80%;
+height: 30px;
+background-color: crimson;
+animation: js 1s linear;
+}
+#aboutMe .con .skills .js-bar::before{
+    content: "80%";
+    font-size: 1.5rem;
+    font-weight: 900;
+    position: absolute;
+    right: -40px;
+    top: 20%;
+    color: crimson;
+}
+#aboutMe .con .skills .react-bar::after{
+content: "";
+display: block;
+width: 50%;
+height: 30px;
+background-color: crimson;
+animation: react 1s linear;
+}
+#aboutMe .con .skills .react-bar::before{
+    content: "50%";
+    font-size: 1.5rem;
+    font-weight: 900;
+    position: absolute;
+    right: -40px;
+    top: 20%;
+    color: crimson;
+}
+#aboutMe .con .skills .node-bar::after{
+content: "";
+display: block;
+width: 60%;
+height: 30px;
+background-color: crimson;
+animation: node 1s linear;
+}
+#aboutMe .con .skills .node-bar::before{
+    content: "60%";
+    font-size: 1.5rem;
+    font-weight: 900;
+    position: absolute;
+    right: -40px;
+    top: 20%;
+    color: crimson;
+}
+#aboutMe .con .skills .mongo-bar::after{
+content: "";
+display: block;
+width: 50%;
+height: 30px;
+background-color: crimson;
+animation: mongo 1s linear;
+}
+#aboutMe .con .skills .mongo-bar::before{
+    content: "50%";
+    font-size: 1.5rem;
+    font-weight: 900;
+    position: absolute;
+    right: -40px;
+    top: 20%;
+    color: crimson;
+}
+#aboutMe .con .skills .sqlserver-bar::after{
+content: "";
+display: block;
+width: 40%;
+height: 30px;
+background-color: crimson;
+animation: sqlserver 1s linear;
+}
+#aboutMe .con .skills .sqlserver-bar::before{
+    content: "40%";
+    font-size: 1.5rem;
+    font-weight: 900;
+    position: absolute;
+    right: -40px;
+    top: 20%;
+    color: crimson;
+}
+
+@media (max-width:900px) {
+    #aboutMe  .skills .skill-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.frontend ,  .backend {
+    width: 90% !important;
+}
+
+}
+/* end about me */
+
+
+
+
+
+
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:85% ;
+    }
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:75% ;
+    }
+}
+@keyframes js {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:80% ;
+    }
+}
+@keyframes react {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:50% ;
+    }
+}
+@keyframes node {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:60% ;
+    }
+}
+@keyframes mongo {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:50% ;
+    }
+}
+
+
+
+@keyframes sqlserver {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:40% ;
+    }
+}
+
+
 
 
 
