@@ -26,16 +26,19 @@ const data = [
     title: "HTML",
     info: "html is the basic of the web world so you have to learn it ",
     img: "https://cdn-icons-png.flaticon.com/512/732/732212.png",
+    link: "/pages/htmlCoursePage.html",
   },
   {
     title: "CSS",
     info: "soon",
     img: "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png",
+    link: "/pages/htmlCoursePage.html",
   },
   {
     title: "JS",
     info: "soon",
     img: "https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_960_720.png",
+    link: "/pages/htmlCoursePage.html",
   },
 ];
 
@@ -50,7 +53,7 @@ for (let i = 0; i < data.length; i++) {
                 <div class="card-body">
                     <h1>${data[i].title}</h1>
                     <p>${data[i].info}</p>
-                    <button>start tour</button>
+                    <button><a href="${data[i].link}">start tour</a></button>
                 </div>
             </div>
     `;
@@ -198,6 +201,25 @@ btns[0].addEventListener("click",(e)=>{
         img.classList.add("img-expand");
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

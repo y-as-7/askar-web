@@ -322,6 +322,10 @@ html{
     border-radius: 10px;
     outline: none;
 }
+#courses .courses-cards .card .card-body button a{
+    color: #fff;
+}
+
 #courses .courses-cards .card:hover .card-body{
     right: 0;
 }

@@ -1,0 +1,85 @@
+
+#learn-here-con{
+    padding: 100px 0;
+}
+#learn-here-con .con{
+    position: relative
+}
+.side-bar{
+    padding: 60px;
+}
+.icon{
+    position: relative;
+    height: 0;
+}
+.icon i{
+    color: #d03535da;
+    font-size: 4rem;
+    position: fixed;
+    z-index: 2;
+    left: 190px ;
+    top: 80px;
+    rotate: 90deg;
+    cursor: pointer;
+    transition: .5s;
+}
+.icon-closed{
+    transition: .5s;
+    left: 0 !important;
+    rotate: 270deg !important;
+    color: crimson !important;
+    position: relative;
+}
+.icon-closed::after{
+    content: 'list';
+    position: absolute;
+    rotate: 90deg;
+    right: -20px;
+    top: 70px;
+    font-size: 3rem;
+}
+.list{
+    transition: .5s;
+    position:fixed ;
+    background-color:#202832 ;
+    padding: 60px 20px;
+    left: 0;
+    min-height: 94.6vh;
+}
+.open{
+    transition: 2s;
+    left: -70% !important;
+}
+ .list .title{
+    text-align: center;
+    width: 100%;
+}
+ .list .title h1{
+    font-size: 4rem;
+    color: crimson;
+    opacity: .8;
+    position: relative;
+}
+.list .title h1::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+}
+
+.list .list-items{
+    margin-top: 10px;
+}
+ .list .list-items h2{
+    margin: 12px 0;
+    transition: 1s ease;
+}
+ .list .list-items h2 a{
+    color: #fff;
+    font-size: 2rem;
+}
+ .list .list-items h2 :hover{
+    color: crimson;
+}

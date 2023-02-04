@@ -1,0 +1,37 @@
+#html-con  {
+    padding:100px 0 ;
+    background-color: #202832;
+}
+#html-con .con{
+    text-align: center;
+    min-height: 59vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#html-con .con h1{
+    margin: 3rem 0;
+    border: 1px solid crimson;
+    padding: 10px 20px;
+    font-size:5rem;
+    text-transform: capitalize;
+    color: #fff;
+    transition: .6s ease;
+}
+#html-con .con h1 a{
+    color: unset;
+}
+#html-con .con h1 a span{
+    color: crimson;
+    transition: .4s ease;
+}
+#html-con .con h1:hover{
+    background-color: crimson;
+    color: #fff;
+    border: 1px solid #fff;
+}
+#html-con .con h1:hover span{
+    background-color: crimson;
+    color: #fff;
+}
